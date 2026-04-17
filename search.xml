@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>CSS Grid 布局完全指南</title>
+    <url>/2025/03/05/css-grid-layout/</url>
+    <content><![CDATA[<p>CSS Grid 是 CSS 中最强大的布局系统之一。本文将详细介绍 CSS Grid 的使用方法。</p>
+<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><h3 id="网格容器和网格项"><a href="#网格容器和网格项" class="headerlink" title="网格容器和网格项"></a>网格容器和网格项</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="定义网格轨道"><a href="#定义网格轨道" class="headerlink" title="定义网格轨道"></a>定义网格轨道</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">grid-template-columns</span>: <span class="number">100px</span> <span class="number">100px</span> <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">grid-template-rows</span>: <span class="number">100px</span> <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="常用属性"><a href="#常用属性" class="headerlink" title="常用属性"></a>常用属性</h2><h3 id="gap"><a href="#gap" class="headerlink" title="gap"></a>gap</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  <span class="attribute">grid-template-columns</span>: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">1</span>fr);</span><br><span class="line">  <span class="attribute">gap</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="grid-template-areas"><a href="#grid-template-areas" class="headerlink" title="grid-template-areas"></a>grid-template-areas</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  <span class="attribute">grid-template-areas</span>:</span><br><span class="line">    <span class="string">&quot;header header header&quot;</span></span><br><span class="line">    <span class="string">&quot;sidebar main main&quot;</span></span><br><span class="line">    <span class="string">&quot;footer footer footer&quot;</span>;</span><br><span class="line">  <span class="attribute">grid-template-rows</span>: <span class="number">60px</span> <span class="number">1</span>fr <span class="number">60px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.header</span> &#123; <span class="attribute">grid-area</span>: header; &#125;</span><br><span class="line"><span class="selector-class">.sidebar</span> &#123; <span class="attribute">grid-area</span>: sidebar; &#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123; <span class="attribute">grid-area</span>: main; &#125;</span><br><span class="line"><span class="selector-class">.footer</span> &#123; <span class="attribute">grid-area</span>: footer; &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="网格项位置"><a href="#网格项位置" class="headerlink" title="网格项位置"></a>网格项位置</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">grid-column</span>: <span class="number">1</span> / <span class="number">3</span>;</span><br><span class="line">  <span class="attribute">grid-row</span>: <span class="number">1</span> / <span class="number">2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="响应式布局"><a href="#响应式布局" class="headerlink" title="响应式布局"></a>响应式布局</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  <span class="attribute">grid-template-columns</span>: <span class="built_in">repeat</span>(auto-fit, <span class="built_in">minmax</span>(<span class="number">250px</span>, <span class="number">1</span>fr));</span><br><span class="line">  <span class="attribute">gap</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>CSS Grid 为我们提供了一种简洁、高效的二维布局方式，可以轻松实现各种复杂的页面布局。</p>
+]]></content>
+      <categories>
+        <category>前端开发</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+        <tag>前端</tag>
+        <tag>布局</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2025/01/01/hello-world/</url>
+    <content><![CDATA[<p>欢迎来到我的个人博客！</p>
+<p>这是我的第一篇博客文章，用来测试博客系统是否正常工作。</p>
+<h2 id="关于这个博客"><a href="#关于这个博客" class="headerlink" title="关于这个博客"></a>关于这个博客</h2><p>这个博客将用于：</p>
+<ul>
+<li>分享技术心得</li>
+<li>记录学习历程</li>
+<li>记录生活点滴</li>
+</ul>
+<h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><p>我计划在这个博客中分享以下技术内容：</p>
+<ul>
+<li><strong>前端开发</strong>：Vue.js, React, JavaScript 等</li>
+<li><strong>后端开发</strong>：Node.js, Python, Java 等</li>
+<li><strong>工具使用</strong>：Git, Docker, Linux 等</li>
+<li><strong>其他技术</strong>：算法、数据结构等</li>
+</ul>
+<p>如果你有任何问题或建议，欢迎留言告诉我！</p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>入门</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue 3 Composition API 入门指南</title>
+    <url>/2025/02/10/vue3-composition-api/</url>
+    <content><![CDATA[<p>Vue 3 引入了 Composition API，这是一种新的编写组件逻辑的方式。本文将介绍 Composition API 的基本用法。</p>
+<h2 id="为什么需要-Composition-API？"><a href="#为什么需要-Composition-API？" class="headerlink" title="为什么需要 Composition API？"></a>为什么需要 Composition API？</h2><p>传统的 Options API 在处理复杂组件时可能会出现逻辑分散的问题。Composition API 允许我们将相关逻辑组织在一起。</p>
+<h2 id="核心函数"><a href="#核心函数" class="headerlink" title="核心函数"></a>核心函数</h2><h3 id="setup"><a href="#setup" class="headerlink" title="setup()"></a>setup()</h3><p><code>setup()</code> 是 Composition API 的入口点，在组件实例创建之前执行。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="title function_">setup</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// 在这里编写组合式逻辑</span></span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      <span class="comment">// 返回的值可以在模板中使用</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="ref-和-reactive"><a href="#ref-和-reactive" class="headerlink" title="ref 和 reactive"></a>ref 和 reactive</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; ref, reactive &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 响应式引用</span></span><br><span class="line"><span class="keyword">const</span> count = <span class="title function_">ref</span>(<span class="number">0</span>)</span><br><span class="line"><span class="keyword">const</span> message = <span class="title function_">ref</span>(<span class="string">&#x27;Hello&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 响应式对象</span></span><br><span class="line"><span class="keyword">const</span> state = <span class="title function_">reactive</span>(&#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;Vue&#x27;</span>,</span><br><span class="line">  <span class="attr">version</span>: <span class="string">&#x27;3.0&#x27;</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="computed"><a href="#computed" class="headerlink" title="computed"></a>computed</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; ref, computed &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> count = <span class="title function_">ref</span>(<span class="number">0</span>)</span><br><span class="line"><span class="keyword">const</span> doubled = <span class="title function_">computed</span>(<span class="function">() =&gt;</span> count.<span class="property">value</span> * <span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="watch"><a href="#watch" class="headerlink" title="watch"></a>watch</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; ref, watch &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> count = <span class="title function_">ref</span>(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="title function_">watch</span>(count, <span class="function">(<span class="params">newValue, oldValue</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`count changed from <span class="subst">$&#123;oldValue&#125;</span> to <span class="subst">$&#123;newValue&#125;</span>`</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="生命周期钩子"><a href="#生命周期钩子" class="headerlink" title="生命周期钩子"></a>生命周期钩子</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; onMounted, onUpdated, onUnmounted &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">onMounted</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Component mounted&#x27;</span>)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="title function_">onUpdated</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Component updated&#x27;</span>)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="title function_">onUnmounted</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Component unmounted&#x27;</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Composition API 提供了更灵活的方式来组织组件逻辑，特别适合处理复杂组件。</p>
+]]></content>
+      <categories>
+        <category>前端开发</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>Vue</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git 使用指南</title>
+    <url>/2025/01/15/git-guide/</url>
+    <content><![CDATA[<p>Git 是目前最流行的版本控制系统之一。本文将介绍 Git 的基本使用方法。</p>
+<h2 id="初始化仓库"><a href="#初始化仓库" class="headerlink" title="初始化仓库"></a>初始化仓库</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><h3 id="添加文件"><a href="#添加文件" class="headerlink" title="添加文件"></a>添加文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git add filename</span><br></pre></td></tr></table></figure>
+
+<h3 id="提交更改"><a href="#提交更改" class="headerlink" title="提交更改"></a>提交更改</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提交信息&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="查看状态"><a href="#查看状态" class="headerlink" title="查看状态"></a>查看状态</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure>
+
+<h3 id="查看提交历史"><a href="#查看提交历史" class="headerlink" title="查看提交历史"></a>查看提交历史</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">log</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><h3 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git branch branch-name</span><br></pre></td></tr></table></figure>
+
+<h3 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git checkout branch-name</span><br></pre></td></tr></table></figure>
+
+<h3 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git merge branch-name</span><br></pre></td></tr></table></figure>
+
+<h2 id="远程操作"><a href="#远程操作" class="headerlink" title="远程操作"></a>远程操作</h2><h3 id="添加远程仓库"><a href="#添加远程仓库" class="headerlink" title="添加远程仓库"></a>添加远程仓库</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote add origin https://github.com/user/repo.git</span><br></pre></td></tr></table></figure>
+
+<h3 id="推送代码"><a href="#推送代码" class="headerlink" title="推送代码"></a>推送代码</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<h3 id="拉取代码"><a href="#拉取代码" class="headerlink" title="拉取代码"></a>拉取代码</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Git 是一个强大的版本控制工具，掌握基本操作可以让我们的开发工作更加高效。</p>
+]]></content>
+      <categories>
+        <category>工具使用</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>版本控制</tag>
+      </tags>
+  </entry>
+</search>
